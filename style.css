@@ -24,7 +24,7 @@
 }
 .nav a {
     font-family: Montserrat;
-    font-size: clamp(15px, 2vw, 20px);
+    font-size: clamp(10px, 2vw, 20px);
     text-transform: uppercase;
     padding: 2px 10px;
     color: #fff;
