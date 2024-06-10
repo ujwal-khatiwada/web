@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: poppins;
 }
 
 
@@ -12,7 +13,6 @@
 }
 
 .nav a{
-    font-family: Montserrat;
     font-size: clamp(10px, 2vw,  15px);
     color: white;
     text-transform: uppercase;
@@ -38,7 +38,9 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .logo{
@@ -48,7 +50,6 @@
 }
 
 .logo img{
-    margin-top: 50vh;
     height: 100%;
     width: 100%;
     opacity: 0.5;
@@ -79,7 +80,6 @@
 }
 
 .offerHead{
-    font-family: cursive;
     color: white;
     font-size: 4vh;
     background-color: rgb(29, 29, 29);
@@ -109,18 +109,17 @@
 }
 
 .quest {
-    font-family: Helvetica;
     text-transform: uppercase;
     text-align: center;
-    font-size: x-large;
+    font-size: 16px;
     margin-bottom: 5px;
-    padding: 5px;
+    padding: 0 5px;
     color: white;
 }
 
 .ans{
-    font-family: cursive;
     color:rgb(184, 183, 183);
+    font-size: 12px;
 }
 
 .schedule {
@@ -140,13 +139,11 @@
 
 .schedule p.head{
     font-size: x-large;
-    font-family: cursive;
     color: white;
 }
 
 .schedule p.body{
     font-size: larger;
-    font-family: cursive;
     color:rgb(184, 183, 183);
 }
 
@@ -174,7 +171,6 @@ button:hover {
     padding: 0 0 20px;
     text-align: center;
     font-size: xx-large;
-    font-family: "Ostwald";
     font-weight: bold;
     text-transform: uppercase;
     color: white;
@@ -184,7 +180,6 @@ button:hover {
     text-align: center;
     padding: 0 0 20px 0;
     font-size: large;
-    font-family: cursive;
     color:rgb(184, 183, 183);
 }
 
@@ -211,7 +206,6 @@ button:hover {
 
 .package p.head{
     font-size: 30px;
-    font-family: "Oswald";
     color: rgb(24, 24, 24);
     text-transform: uppercase;
     margin: 30px 0 10px;
@@ -227,7 +221,6 @@ button:hover {
 
 p.price{
     font-size: 30px;
-    font-family: "Montserrat";
     color: rgb(231, 231, 13);
     font-weight: bold;
     margin: 0;
@@ -238,7 +231,6 @@ p.price{
     margin-top: 10px;
     font-weight: normal;
     font-size: 14px;
-    font-family: 'Oswald';
 }
 
 .package .body ul{
@@ -248,7 +240,6 @@ p.price{
 }
 .package .body ul li{
     font-size: 18px;
-    font-family: cursive;
     color: rgb(24, 24, 24);
     line-height: 2.4;
 }
@@ -258,7 +249,7 @@ p.price{
     background: rgb(44, 41, 41);
     display: flex;
     justify-content: space-around;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
 #footer_item{
@@ -286,17 +277,14 @@ p.price{
 
 .ftr_item h4{
     font-size: larger;
-    font-family: monospace;
     color: #b8b7b7;
-    text-decoration: underline;
-    margin-bottom: 5px; /* Adjust spacing */
+    margin-bottom: 5px; 
 }
 
 .ftr_item a{
     color: rgb(143, 143, 143);
-    font-family: monospace;
     padding: 2px;
-    display: block; /* Ensure each item takes full width */
+    display: block; 
 }
 
 .link{
@@ -328,125 +316,101 @@ p.price{
     justify-content:center;
     flex-wrap: wrap;
     align-content: flex-end;
-    color: #fff;
-    font-family: cursive;
 }
 @media only screen and (max-width: 768px) {
     .nav{
-        height: 5vh;
+        height: 5dvh;
     }
+    
+    .nav a:active{
+        padding: 10px;
+        border-radius: 5%;
+        background-color: rgb(17, 15, 15);
+    }
+
     .bg1{
-        height: 95vh;
+        height: 95dvh;
     }
-    
-._2 {
-    height: 100vh;
-    background-color: rgb(29, 29, 29);
-}
 
-.offerHead{
-    font-family: cursive;
-    color: white;
-    font-size: 4vh;
-    background-color: rgb(29, 29, 29);
-    padding-top: 10px;
-    text-align: center;
-    height: 5vh;
-}
-.info {
-    width: 100%; 
-    height: 70%; 
-    box-sizing: border-box; 
-    padding: 20px 20px 20px 20px; 
-    background-color: rgb(29, 29, 29);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .moto p{
+        font-size: 13px;
+    }
 
-.info_child {
-    width: 40%;
-    margin-right: 20px; 
-    margin-bottom: 20px; 
-    background-color: rgb(41, 38, 38); 
-    padding: 10px;
-    border-radius: 8px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; 
-}
+    .learn  p{
+        font-size: 10px;
+    }
 
-.quest {
-    font-family: Helvetica;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: large;
-    margin-bottom: 5px;
-    padding: 5px;
-    color: white;
-}
+    ._2 {
+        height: 100dvh;
+    }
 
-.ans{
-    font-family: cursive;
-    color:rgb(184, 183, 183);
-}
+    .offerHead{
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .info {
+        width: 100%; 
+        height: 70%;
+        padding: 20px 0; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.schedule {
-    text-align: center;
-    width: 100%; 
-    height: 20%; 
-    box-sizing: border-box;
-    padding: 20px 0 20px 20px; 
-    background-color: rgb(41, 38, 38); 
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    justify-content: space-between;
+    .info_child {
+        width: 40%;
+        background-color: rgb(41, 38, 38); 
+        padding: 10px;
+    }
 
-}
+    .quest {
+        font-size: 16px;
+    }
 
-.schedule p.head{
-    font-size: x-large;
-    font-family: cursive;
-    color: white;
-}
+    .ans{
+        text-justify: 
+    }
 
-.schedule p.body{
-    font-size: larger;
-    font-family: cursive;
-    color:rgb(184, 183, 183);
-}
+    .schedule{
+        width: 100%; 
+        height: 20%; 
+        box-sizing: border-box;
+        padding: 20px 0 20px 20px; 
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+        justify-content: space-between;
 
-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+    }
 
-button:hover {
-    background-color: #0056b3;
-}
+    .schedule p.head{
+        font-size: 24px;
+    }
 
-    
+    .schedule p.body{
+        font-size: 16px;
+    }
 
-._3{
-    padding-top: 10px;
-    background-color: rgb(29, 29, 29);
-}
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+        
+
+    ._3{
+        padding-top: 10px;
+    }
 
     .price1 p.head{
         padding: 0 0 20px;
-        text-align: center;
         font-size: xx-large;
-        font-family: "Ostwald";
-        font-weight: bold;
-        text-transform: uppercase;
-        color: white;
     }
     
     .price1 p.offer{
@@ -463,78 +427,67 @@ button:hover {
     
     .khaik{
         display:  flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
-        flex-shrink: 1;
     }
-    
+        
     .package{
         background: url(pricebg.png);
-        height: 425px;
-        width: 264px;
+        background-size: cover;
+        height: 300px;
+        width: 48%;
         display: flex;
         text-align: center;
         justify-content: center;
         flex-direction: column-reverse;
+        margin-bottom: 4%;
     }
-    
+
     .package p.head{
-        font-size: 15px;
-        font-family: "Oswald";
+        font-size: 20px;
         color: rgb(24, 24, 24);
         text-transform: uppercase;
+        margin: 30px 0 10px;
         font-weight: bold;
     }
-    
+
     .line{
         margin-left: 20%;
-        height: 2px;
+        height: 3px;
         width: 60%;
         background-color: antiquewhite;
     }
-    
+
     p.price{
-        font-size: 20px;
-        font-family: "Montserrat";
+        font-size: 30px;
         color: rgb(231, 231, 13);
         font-weight: bold;
         margin: 0;
-        line-height: 24px;
     }
-    
+
     .package .body{
-        margin-top: 5px;
+        margin-top: 10px;
         font-weight: normal;
-        font-size: 8px;
-        font-family: 'Oswald';
     }
-    
+
     .package .body ul{
         padding: 0;
         margin-bottom: 10px;
         list-style: none;
     }
     .package .body ul li{
-        font-size: 14px;
-        font-family: cursive;
+        font-size: 16px;
         color: rgb(24, 24, 24);
-        line-height: 2.4;
-    }
-    
-    .package{
-        width: 25vw;
+        line-height: 2;
     }
 
-    
     footer{
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
     }
         
     .footer_section{
-        height: 40vh;
-        background: rgb(44, 41, 41);
-        display: flex;
+        height: 20vh;
     }
 
     #footer_item{
@@ -552,40 +505,34 @@ button:hover {
         width: 100%;
     }
 
-    .container{
-        padding-top: 10px;
-    }
-
-    .ftr_item{
-        margin: 8px;
-    }
-
-    .ftr_item h4{
-        font-size: clamp(5px, 2vw, 10px);
-        font-family: monospace;
+    .flex h4{
+        font-size: 12px;
         color: #b8b7b7;
-        text-decoration: underline;
+    }
+    .container, .name_over{
+        margin-top: 10px;
+    }
+
+    .ftr_item a{
+        text-decoration: none;
+    }
+    
+    .ftr_item h4{
+        font-size: 12px;
+        color: #b8b7b7;
         margin-bottom: 5px; 
     }
 
-    .link a{
-        font-family: monospace;
-        color: #b8b7b7;
+    .ftr_item a{
+        font-size: 10px;
+        color: rgb(143, 143, 143);
         padding: 2px;
-        text-decoration: none;
+        display: block; 
     }
-
     .link{
-        margin-top: 10px;
-        display: flex;
-        font-size: larger;
-        flex-direction: column;
+        display: none;
     }
-
-    .name_over{
-        margin-top: 10px;
-    }
-
+    
     .social_icon{
         display: flex;
         flex-wrap: wrap;
